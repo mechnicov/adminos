@@ -48,6 +48,7 @@ module Adminos::Generators
 
     def migrations
       migration_template 'settings_migration.rb', 'db/migrate/create_settings.rb', migration_version: migration_version
+      migration_template 'images_migration.rb', 'db/migrate/create_images.rb', migration_version: migration_version
     end
 
     def seeds
